@@ -1,0 +1,42 @@
+node_modules/
+.venv-ssf/
+__pycache__/
+*.pyc
+
+# Build output
+dist/
+
+# Runtime data
+data/
+logs/
+*.log
+*.sqlite
+*.sqlite3
+*.db
+
+# Python / test cache
+.pytest_cache/
+.mypy_cache/
+*.pyo
+
+# Local env
+.env
+.env.*
+!.env.example
+
+# Local tooling and upload packages
+.venv/
+venv/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+release/
+.local-tools/
+
+# Large datasets and generated artifacts
+ssf/NSL_pre_data/
+ssf/UNSW_pre_data/
+_share_core/
+_share_tmp_*/
+*.zip

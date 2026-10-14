@@ -1,0 +1,17 @@
+services:
+  mysql:
+    image: mysql:latest
+    container_name: ssf-mysql
+    restart: unless-stopped
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: hust2026
+      MYSQL_DATABASE: ssf
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: hust2026
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  mysql_data:
